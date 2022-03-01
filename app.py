@@ -48,7 +48,7 @@ def predict() -> dict:
     try:
         formData = request.json
         print(formData)
-        result = str(predict_aqi(formData, 'xgb.pkl'))
+        result = str(predict_aqi(formData, 'k_nearest_regression_model.pkl'))
     except:
         print(sys.exc_info())
         result = 'Server error'
