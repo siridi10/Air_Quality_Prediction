@@ -3,7 +3,7 @@ import pandas as pd
 
 import pickle
 
-loaded_model=pickle.load(open('lasso_regression_model.pkl', 'rb'))
+loaded_model=pickle.load(open('k_nearest_regression_model.pkl', 'rb'))
 app = Flask(__name__)
 
 @app.route('/')
